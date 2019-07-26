@@ -3,7 +3,6 @@
 
 int main(int argc, char *argv[])
 {
-
     // pointer assignment can't be changed.
     const char *testString = "nihargoli";
     char *testCopyStr      = "nihar";
@@ -24,5 +23,24 @@ int main(int argc, char *argv[])
     // Something on below lines will fail to compile.
     // *testString2 = *testCopyStr;
     // strcpy(testString, testCopyStr);
+
+    // array of characters
+    char *arr = "nihargoli";
+    printf("string is ");
+    for (int i = 0; i < strlen(arr); i++) 
+        printf("%c", arr[i]);
+    printf("\n");
+    // or can be printed like
+    printf("other way to print %s \n", arr);
+
+    // array of strings
+    char arr_str[2][6] = {"nihar", "goli"};
+    char (*tdarr)[6];
+
+    tdarr = arr_str;
+
+    printf("string 1 is %s\n", *tdarr);
+    *tdarr++;
+    printf("string 2 is %s\n", *tdarr); 
 
 }
