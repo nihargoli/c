@@ -1,3 +1,11 @@
+/*
+**
+** Feel free to use the code. No restrictions.
+** Added code to better understand pointers to integers
+** and pointers to arrays.
+** author: nihar goli; email: nihargoli@gmail.com
+**/
+
 #include <stdio.h>
 #include <string.h>
 
